@@ -12,41 +12,43 @@
 
     <div class="container">
 
-        <div class="display" id="display">Result</div>
+        <input class = "display" type = "text" id = "result" disabled />
 
         <div class="row">
-            <button type="button" class="buttons">CE</button>
-            <button type="button" class="buttons">C</button>
+            <button type="button" class="buttons"></button>
+            <button type="button" class="buttons" onclick="clearScreen()">C</button>
             <button type="button" class="buttons">Back</button>
-            <button type="button" class="buttons">/</button>
+            <button type="button" class="buttons" onclick="display('/')">/</button>
         </div>
         <div class="row">
-            <button type="button" class="buttons">7</button>
-            <button type="button" class="buttons">8</button>
-            <button type="button" class="buttons">9</button>
-            <button type="button" class="buttons">X</button>
+            <button type="button" class="buttons" onclick="display('7')">7</button>
+            <button type="button" class="buttons" onclick="display('8')">8</button>
+            <button type="button" class="buttons" onclick="display('9')">9</button>
+            <button type="button" class="buttons" onclick="display('X')">X</button>
         </div>
         <div class="row">
-            <button type="button" class="buttons">4</button>
-            <button type="button" class="buttons">5</button>
-            <button type="button" class="buttons">6</button>
-            <button type="button" class="buttons">-</button>
+            <button type="button" class="buttons" onclick="display('4')">4</button>
+            <button type="button" class="buttons" onclick="display('5')">5</button>
+            <button type="button" class="buttons" onclick="display('6')">6</button>
+            <button type="button" class="buttons" onclick="display('-')">-</button>
         </div>
         <div class="row">
-            <button type="button" class="buttons">1</button>
-            <button type="button" class="buttons">2</button>
-            <button type="button" class="buttons">3</button>
-            <button type="button" class="buttons">+</button>
+            <button type="button" class="buttons" onclick="display('1')">1</button>
+            <button type="button" class="buttons" onclick="display('2')">2</button>
+            <button type="button" class="buttons" onclick="display('3')">3</button>
+            <button type="button" class="buttons" onclick="display('+')">+</button>
         </div>
         <div class="row">
             <button type="button" class="buttons"></button>
-            <button type="button" class="buttons">0</button>
-            <button type="button" class="buttons">,</button>
-            <button type="button" class="buttons">=</button>
+            <button type="button" class="buttons" onclick="display('0')">0</button>
+            <button type="button" class="buttons" onclick="display(',')">,</button>
+            <button type="button" class="buttons" onclick="calculate()">=</button>
         </div>
 
 
     </div>
+
+    <script src="scripts.js"></script>
 
 
     
